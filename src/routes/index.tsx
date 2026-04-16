@@ -9,7 +9,7 @@ export const Route = createFileRoute('/')({
   component: Dashboard,
 });
 
-const N8N_ENDPOINT = 'https://your-n8n-instance.com/webhook/your-webhook-id';
+const N8N_ENDPOINT = 'https://futureproofedge.app.n8n.cloud/webhook-test/atpos';
 
 function Dashboard() {
   const [tasks, setTasks] = useState<Task[]>([]);
