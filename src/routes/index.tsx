@@ -64,7 +64,7 @@ function Dashboard() {
         breakdowns: data.breakdowns || [],
         deadlines: data.deadlines || [],
         estimations: data.estimations || [],
-        next_action: data.next_action || '',
+        next_action: data.next_action || { id: '', reason: '' },
       });
     } catch {
       setError('AI processing failed. Please check your n8n webhook endpoint and try again.');
@@ -104,7 +104,7 @@ function Dashboard() {
           </div>
         )}
 
-        <AIResults results={aiResults} />
+        <AIResults results={aiResults} tasks={tasks} />
       </main>
     </div>
   );
