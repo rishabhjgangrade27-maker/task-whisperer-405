@@ -14,10 +14,10 @@ export interface Task {
 }
 
 export interface AIResponse {
-  priority: string[];
-  summaries: string[];
-  breakdowns: string[];
-  deadlines: string[];
-  estimations: string[];
-  next_action: string;
+  priority: { id: string; priority: string }[];
+  summaries: { id: string; summary: string }[];
+  breakdowns: { id: string; steps: string[] }[];
+  deadlines: { id: string; suggested_deadline: string }[];
+  estimations: { id: string; minutes: number }[];
+  next_action: { id: string; reason: string };
 }
