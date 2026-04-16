@@ -9,7 +9,7 @@ export const Route = createFileRoute('/')({
   component: Dashboard,
 });
 
-const N8N_ENDPOINT = 'https://futureproofedge.app.n8n.cloud/webhook-test/atpos';
+const N8N_ENDPOINT = 'https://futureproofedge.app.n8n.cloud/webhook/atpos';
 
 function Dashboard() {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -78,7 +78,7 @@ function Dashboard() {
       <header className="border-b border-border">
         <div className="mx-auto max-w-3xl px-4 py-5">
           <h1 className="text-xl font-bold text-foreground tracking-tight">ATPOS</h1>
-          <p className="text-sm text-muted-foreground mt-0.5">AI Task Productivity System</p>
+          <p className="text-sm text-muted-foreground mt-0.5">AI Task Prioritization & Optimization System</p>
         </div>
       </header>
 
